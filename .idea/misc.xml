@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/btm.xml" value="0.175" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/btn_style.xml" value="0.175" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/edt_style.xml" value="0.175" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_login.xml" value="0.18" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
