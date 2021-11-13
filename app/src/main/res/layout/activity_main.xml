@@ -29,15 +29,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.578"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:srcCompat="@drawable/logo_transparent" />
 
     <TextView
         android:id="@+id/holaTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:fontFamily="cursive"
-        android:text="Hola"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Magnus Mundus"
         android:textColor="@color/purple_500"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"

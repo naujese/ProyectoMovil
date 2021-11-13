@@ -5,58 +5,103 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
-
+    tools:context=".LoginActivity"
+    android:padding="25dp">
+    
     <ImageView
-        android:id="@+id/imageView.logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_mm_launcher_round"
+        android:transitionName="logoImageTrans"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/bienvenidoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/abel"
+        android:text="Bienvenido"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:transitionName="textTrans"/>
+    <TextView
+        android:id="@+id/continuarLabe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicia sesion para continuar"
+        android:textSize="24sp"
+        android:fontFamily="@font/abel"/>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:srcCompat="@drawable/ic_launcher_foreground"
-        android:layout_weight="50"
-    />
-
-    <EditText
-        android:id="@+id/editTextTextUser"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/user"
-        android:layout_weight="9"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="15dp"
-        android:drawablePadding="10dp"
-        android:background="@drawable/edt_style"
-        android:textColor="@color/white"
-        />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/usuarioTextField"
+        android:hint="Email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abel"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:layout_weight="9"
-        android:hint="@string/Contraseña"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:drawablePadding="10dp"
-        android:background="@drawable/edt_style"
-        android:textColor="@color/white"
-        />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/contrasenaTextField"
+            android:hint="Contraseña"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abel"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        
+        <TextView
+            android:id="@+id/olvidasteContra"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textSize="20dp"
+            android:textColor="@color/teal_200"
+            android:fontFamily="@font/abel"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="¿Olvidasre tu contraseña?"/>
+        
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/inicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INICIO"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="70dp"
+            android:fontFamily="@font/abel"
+            android:textColor="@color/white"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:text="@string/Ingrsar"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="5dp"
-        android:layout_weight="10"
+        <TextView
+            android:id="@+id/nuevoUsuario"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/purple_700"
+            android:fontFamily="@font/abel"
+            android:clickable="true"
+            android:focusable="true"
+            android:textStyle="bold"
+            android:text="¿Eres nuevo? Registrate!"/>
 
-
-        />
+    </LinearLayout>
 
 </LinearLayout>
