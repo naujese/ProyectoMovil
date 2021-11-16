@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".LoginActivity"
-    android:padding="25dp">
+    android:padding="10dp">
     
     <ImageView
         android:id="@+id/loginImageView"
@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
-        android:layout_marginBottom="14dp"
+        android:layout_marginBottom="15dp"
         android:orientation="vertical">
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -50,6 +50,7 @@
             android:transitionName="emailInputTextTrans"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/abel"/>
@@ -65,6 +66,7 @@
             app:passwordToggleEnabled="true"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/abel"

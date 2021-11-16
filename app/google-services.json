@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "489955960159",
+    "project_id": "mpi-01-be415",
+    "storage_bucket": "mpi-01-be415.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489955960159:android:73f72c355de24ed8bbc2ea",
+        "android_client_info": {
+          "package_name": "com.magit.mpi01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489955960159-8s65bearl2kb882vg30uvj05lo7mdqi4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWxpZDqZzlNT2UA80x1OptvRdN3Fm2V1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489955960159-8s65bearl2kb882vg30uvj05lo7mdqi4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

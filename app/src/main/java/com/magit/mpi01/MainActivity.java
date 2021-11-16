@@ -15,6 +15,9 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -35,17 +38,24 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                Pair[] pairs = new Pair[2];
-                pairs[0] = new Pair<View, String>(logoImageView, "logoImageTrans");
-                pairs[1] = new Pair<View, String>(holaTextView, "textTrans");
-
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, pairs);
-                    startActivity(intent, options.toBundle());
-                } else {
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                if (user != null) {
+                    Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                     startActivity(intent);
                     finish();
+                } else {
+                    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                    Pair[] pairs = new Pair[2];
+                    pairs[0] = new Pair<View, String>(logoImageView, "logoImageTrans");
+                    pairs[1] = new Pair<View, String>(holaTextView, "textTrans");
+
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, pairs);
+                        startActivity(intent, options.toBundle());
+                    } else {
+                        startActivity(intent);
+                        finish();
+                    }
                 }
             }
         }, 4000);

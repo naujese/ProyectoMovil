@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MPI01">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity
