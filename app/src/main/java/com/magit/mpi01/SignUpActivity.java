@@ -101,7 +101,7 @@ public class SignUpActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task. isSuccessful()) {
-                            Intent intent = new Intent(SignUpActivity.this, HomeActivity.class);
+                            Intent intent = new Intent(SignUpActivity.this, ConfirmationActivity.class);
                             startActivity(intent);
                             finish();
                         } else {
