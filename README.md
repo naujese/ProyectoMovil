@@ -11,3 +11,5 @@ Aplicación donde se mostrarán las 7 maravillas antiguas y 7 modernas:
 3) Home: Aparece el listado de los lugares (maravillas) .
 4) Actividad inicial: Imagen del lugar con el título de ésta y botón de volver al home.
 5) Actividad ampliada (vista horizontal): aparece la información detallada (texto e imágenes) del lugar seleccionado y botón de volver al home.
+
+# Hey esto es un cambio de mi rama
