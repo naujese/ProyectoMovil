@@ -35,13 +35,14 @@
         android:id="@+id/holaTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="132dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Magnus Mundus"
         android:textColor="@color/purple_500"
-        android:textSize="60sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

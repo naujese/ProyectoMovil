@@ -26,7 +26,7 @@ import java.util.regex.Pattern;
 
 public class LoginActivity extends AppCompatActivity {
 
-    TextView bievenidoLabel, continuarLabel, nuevoUsuario;
+    TextView bievenidoLabel, continuarLabel, nuevoUsuario, olvidasteContarsena;
     ImageView loginImageView;
     TextInputLayout usuarioTextField, contrasenaTextField;
     MaterialButton inicioSesion;
@@ -47,6 +47,7 @@ public class LoginActivity extends AppCompatActivity {
         nuevoUsuario=findViewById(R.id.nuevoUsuario);
         emailEditText=findViewById(R.id.emailEditText);
         passwordEditText=findViewById(R.id.passwordEditText);
+        olvidasteContarsena=findViewById(R.id.olvidasteContra);
 
         mAuth=FirebaseAuth.getInstance();
 
@@ -74,6 +75,15 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        olvidasteContarsena.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, ForgotPassword.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         inicioSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -95,9 +105,6 @@ public class LoginActivity extends AppCompatActivity {
 
         if (password.isEmpty() || password.length()<8) {
             passwordEditText.setError("Se mecesitan mas de 8 caracteres");
-        } else if (!Pattern.compile("[0-9]").matcher(password).find()) {
-            passwordEditText.setError("Al menos un número");
-            return;
         } else {
             passwordEditText.setError(null);
         }
@@ -116,6 +123,7 @@ public class LoginActivity extends AppCompatActivity {
                            finish();
                        } else {
                            Toast.makeText(LoginActivity.this, "Credenciales incorectas, intentalo de nuevo", Toast.LENGTH_LONG).show();
+                           passwordEditText.setError("Contarseña Incorecta");
                        }
                     }
                 });
