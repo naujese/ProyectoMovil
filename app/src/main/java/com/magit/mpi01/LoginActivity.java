@@ -79,8 +79,20 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this, ForgotPassword.class);
-                startActivity(intent);
-                finish();
+
+                Pair[] pairs = new Pair[3];
+                pairs[0]=new Pair<View, String>(loginImageView, "logoImageTrans");
+                pairs[1]=new Pair<View, String>(usuarioTextField, "emailImputTextTrans");
+                pairs[2]=new Pair<View, String>(inicioSesion, "buttonSingInTrans");
+
+                if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP) {
+                    ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(LoginActivity.this, pairs);
+                    startActivity(intent, options.toBundle());
+                } else {
+                    startActivity(intent);
+                    finish();
+                }
+
             }
         });
 

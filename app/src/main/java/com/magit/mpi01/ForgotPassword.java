@@ -3,10 +3,14 @@ package com.magit.mpi01;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Pair;
 import android.util.Patterns;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -19,6 +23,7 @@ public class ForgotPassword extends AppCompatActivity {
 
     MaterialButton recuperarBoton;
     TextInputEditText emailEditText;
+    ImageView logoImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +32,7 @@ public class ForgotPassword extends AppCompatActivity {
 
         recuperarBoton=findViewById(R.id.recuperarBoton);
         emailEditText=findViewById(R.id.emailEditText);
+        logoImageView=findViewById(R.id.logoImageView);
 
         recuperarBoton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,13 +51,7 @@ public class ForgotPassword extends AppCompatActivity {
         sendEmail(email);
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        Intent intent = new Intent(ForgotPassword.this, LoginActivity.class);
-        startActivity(intent);
-        finish();
-    }
+
 
     public void sendEmail(String email) {
         FirebaseAuth auth = FirebaseAuth.getInstance();
@@ -64,13 +64,43 @@ public class ForgotPassword extends AppCompatActivity {
                        if (task.isSuccessful()) {
                            Toast.makeText(ForgotPassword.this, "Correo enviado. Verifique su bandeja de entrada", Toast.LENGTH_LONG).show();
                            Intent intent = new Intent(ForgotPassword.this, LoginActivity.class);
-                           startActivity(intent);
-                           finish();
+                           Pair[] pairs = new Pair[2];
+                           pairs[0]=new Pair<View, String>(emailEditText, "emailInputTextTrans");
+                           pairs[1]=new Pair<View, String>(recuperarBoton, "buttonSingInTrans");
+
+                           if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP) {
+                               ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(ForgotPassword.this, pairs);
+                               startActivity(intent, options.toBundle());
+                           } else {
+                               startActivity(intent);
+                               finish();
+                           }
                        } else {
                            Toast.makeText(ForgotPassword.this, "correo invalido", Toast.LENGTH_SHORT).show();
 
                        }
                     }
                 });
+    }
+
+    @Override
+    public void onBackPressed(){
+        transitionBack();
+    }
+
+    public void transitionBack(){
+        Intent intent=new Intent(ForgotPassword.this, LoginActivity.class);
+
+        Pair[] pairs = new Pair[2];
+        pairs[0]=new Pair<View, String>(emailEditText, "emailInputTextTrans");
+        pairs[1]=new Pair<View, String>(recuperarBoton, "buttonSingInTrans");
+
+        if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP) {
+            ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(ForgotPassword.this, pairs);
+            startActivity(intent, options.toBundle());
+        } else {
+            startActivity(intent);
+            finish();
+        }
     }
 }
