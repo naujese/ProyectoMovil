@@ -46,11 +46,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/singUpImageView"
         android:layout_width="172dp"
         android:layout_height="167dp"
         app:srcCompat="@drawable/logo_transparent"
         tools:layout_editor_absoluteX="-38dp"
-        tools:layout_editor_absoluteY="-21dp" />
+        tools:layout_editor_absoluteY="-21dp"
+        android:transitionName="logoImageTrans"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

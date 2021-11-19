@@ -102,8 +102,18 @@ public class SignUpActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task. isSuccessful()) {
                             Intent intent = new Intent(SignUpActivity.this, ConfirmationActivity.class);
-                            startActivity(intent);
-                            finish();
+
+                            Pair[] pairs = new Pair[1];
+                            pairs[0]=new Pair<View, String>(signUpImageView, "logoImageTrans");
+
+                            if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP) {
+                                ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(SignUpActivity.this, pairs);
+                                startActivity(intent, options.toBundle());
+                                finish();
+                            } else {
+                                startActivity(intent);
+                                finish();
+                            }
                         } else {
                             Toast.makeText(SignUpActivity.this, "Fallo el registro", Toast.LENGTH_LONG).show();
                         }
@@ -131,6 +141,7 @@ public class SignUpActivity extends AppCompatActivity {
         if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP) {
             ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(SignUpActivity.this, pairs);
             startActivity(intent, options.toBundle());
+            finish();
         } else {
             startActivity(intent);
             finish();

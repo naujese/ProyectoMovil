@@ -14,4 +14,10 @@
         <!-- Customize your theme here. -->
         <item name="android:windowContentTransitions">true</item>
     </style>
+
+    <style name="BottomNavigation">
+        <item name="android:background">@color/purple_500</item>
+        <item name="itemIconTint">@color/purple_700</item>
+        <item name="itemTextColor">@color/purple_700</item>
+    </style>
 </resources>
