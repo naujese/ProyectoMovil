@@ -2,17 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/firstFragment"
-        android:icon="@android:drawable/ic_delete"
-        android:title="Primero" />
+        android:icon="@drawable/ic_home"
+        android:title="magnus mundus"
+        />
 
     <item
         android:id="@+id/secondFragment"
-        android:icon="@android:drawable/ic_delete"
-        android:title="Segundo" />
+        android:icon="@drawable/ic_explore"
+        android:title="Explorear" />
 
     <item
         android:id="@+id/thirdFragment"
-        android:icon="@android:drawable/ic_delete"
-        android:title="Tercero" />
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Informacion" />
 
 </menu>

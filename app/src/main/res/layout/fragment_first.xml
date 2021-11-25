@@ -1,19 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment">
+    android:orientation="vertical"
+    tools:context=".HomeActivity"
+    android:padding="10dp">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/loginImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_mm_launcher_round"
+        android:transitionName="logoImageTrans"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="2dp" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:id="@+id/saludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/abel"
-        android:textColor="@color/teal_200"
+        android:text="HOLA"
         android:textSize="40sp"
-        android:text="Primer fragmento" />
+        android:textStyle="bold"
+        android:transitionName="textTrans"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="121dp" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/continuarLabe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abel"
+        android:text="Recupera tu contarseña "
+        android:textSize="24sp"
+        android:transitionName="iniciaSesionTextTrans"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="111dp">
+
+
+    </LinearLayout>
+
+</LinearLayout>
