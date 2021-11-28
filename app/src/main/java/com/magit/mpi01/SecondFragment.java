@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,16 +13,20 @@ import android.view.ViewGroup;
 
 import com.google.android.material.button.MaterialButton;
 
+import org.w3c.dom.Text;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class SecondFragment extends Fragment {
-
-    private MaterialButton continuarBoton;
-
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
     private String mParam1;
     private String mParam2;
+    RecyclerView recyclerDatos;
+    ArrayList<DatosVo> listaDatos;
 
     public SecondFragment() {
 
@@ -47,17 +53,22 @@ public class SecondFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View vista=inflater.inflate(R.layout.fragment_second, container, false);
+        listaDatos=new ArrayList<>();
+        recyclerDatos=(RecyclerView) vista.findViewById(R.id.recyclerId);
+        recyclerDatos.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        View root= inflater.inflate(R.layout.fragment_second, container, false);
-        continuarBoton=root.findViewById(R.id.continuarBoton);
+        llenarLista();
+        AdapterDatos adapter=new AdapterDatos(listaDatos);
+        recyclerDatos.setAdapter(adapter);
+        return vista;
 
-        continuarBoton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent= new Intent(getActivity(), SecondActivity.class);
-                getActivity().startActivity(intent);
-            }
-        });
-        return root;
     }
+
+    private void llenarLista() {
+        listaDatos.add(new DatosVo("piramides","egipto",R.drawable.ic_piramides));
+        listaDatos.add(new DatosVo("india","asia",R.drawable.ic_taj));
+    }
+
+
 }
