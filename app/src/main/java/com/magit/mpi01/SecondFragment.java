@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
 
@@ -18,7 +19,8 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SecondFragment extends Fragment {
+public class SecondFragment extends Fragment implements AdapterDatos.lugarSelecionado{
+
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -59,16 +61,24 @@ public class SecondFragment extends Fragment {
         recyclerDatos.setLayoutManager(new LinearLayoutManager(getContext()));
 
         llenarLista();
-        AdapterDatos adapter=new AdapterDatos(listaDatos);
+        AdapterDatos adapter=new AdapterDatos(listaDatos, this);
         recyclerDatos.setAdapter(adapter);
         return vista;
 
     }
 
     private void llenarLista() {
-        listaDatos.add(new DatosVo("piramides","egipto",R.drawable.ic_piramides));
-        listaDatos.add(new DatosVo("india","asia",R.drawable.ic_taj));
+        listaDatos.add(new DatosVo("Maravillas del mundo antiguo","egipto",R.drawable.ic_piramides));
+        listaDatos.add(new DatosVo("Maravillas del mundo moderno","asia",R.drawable.ic_taj));
     }
 
 
+    @Override
+    public void lugarSelecionado(DatosVo datosVo) {
+        Intent intent=new Intent(getActivity(), SecondActivity.class);
+        intent.putExtra("id",datosVo.getTitulo());
+        startActivity(intent);
+
+
+    }
 }

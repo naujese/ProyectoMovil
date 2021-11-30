@@ -9,7 +9,7 @@
     <item
         android:id="@+id/secondFragment"
         android:icon="@drawable/ic_explore"
-        android:title="Explorear" />
+        android:title="Explorar" />
 
     <item
         android:id="@+id/thirdFragment"
