@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.magit.mpi01">
 
+    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_mm_launcher"
@@ -10,26 +12,149 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MPI01">
         <activity
-            android:name=".SecondActivity"
-            android:exported="false" />
+            android:name=".FourthActivityBG"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".FourthActivityBF"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".FourthActivityBE"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".FourthActivityBD"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".FourthActivityBC"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".FourthActivityBB"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".FourthActivityBA"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".FourthActivityAG"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".FourthActivityAF"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".FourthActivityAE"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".FourthActivityAD"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".FourthActivityAC"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".FourthActivityAB"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".FourthActivityAA"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ThirdActivityBG"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThirdActivityBF"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThirdActivityBE"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThirdActivityBD"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThirdActivityBC"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThirdActivityBB"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThirdActivityBA"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThirdActivityAG"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThirdActivityAF"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThirdActivityAE"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThirdActivityAD"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThirdActivityAC"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThirdActivityAB"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThirdActivityAA"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondActivityB"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondActivityA"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ConfirmationActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ForgotPassword"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".HomeActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SignUpActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

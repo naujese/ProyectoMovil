@@ -2,21 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".HomeActivity"
-    android:padding="10dp"
-    android:layout_marginBottom="50dp">
-
-
+    android:padding="10dp">
 
     <ImageView
-        android:id="@+id/loginImageView"
-        android:layout_width="100dp"
+        android:id="@+id/idPortada"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        android:src="@mipmap/ic_mm_launcher_round"
+        android:src="@drawable/aa1"
+        app:cardCornerRadius="20dp"
         android:transitionName="logoImageTrans"
         tools:layout_editor_absoluteX="155dp"
         tools:layout_editor_absoluteY="2dp" />
@@ -24,17 +23,20 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+
+
             <TextView
-                android:id="@+id/saludo"
+                android:id="@+id/idTitulo2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/abel"
-                android:text="HOLA"
+                android:text="Piramides de giza"
                 android:textSize="40sp"
                 android:textStyle="bold"
                 android:transitionName="textTrans"
@@ -42,15 +44,41 @@
                 tools:layout_editor_absoluteY="121dp" />
 
             <TextView
-                android:id="@+id/continuarLabe"
+                android:id="@+id/idInfo2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/abel"
-                android:text="Recupera tu contarseña hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh "
+                android:text="Recupera tu contarseña "
                 android:textSize="24sp"
                 android:transitionName="iniciaSesionTextTrans"
                 tools:layout_editor_absoluteX="6dp"
                 tools:layout_editor_absoluteY="184dp" />
+
+            <TextView
+                android:id="@+id/idInfoX2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="in"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="43dp"
+                tools:layout_editor_absoluteY="111dp">
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        app:srcCompat="@drawable/ic_screen_rotation"/>
 </LinearLayout>

@@ -3,6 +3,7 @@ package com.magit.mpi01;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -19,7 +20,7 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SecondFragment extends Fragment implements AdapterDatos.lugarSelecionado{
+public class SecondFragment extends Fragment{
 
 
     private static final String ARG_PARAM1 = "param1";
@@ -27,8 +28,9 @@ public class SecondFragment extends Fragment implements AdapterDatos.lugarSeleci
 
     private String mParam1;
     private String mParam2;
-    RecyclerView recyclerDatos;
-    ArrayList<DatosVo> listaDatos;
+    private CardView antiguo;
+    private CardView moderno;
+
 
     public SecondFragment() {
 
@@ -55,30 +57,30 @@ public class SecondFragment extends Fragment implements AdapterDatos.lugarSeleci
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View vista=inflater.inflate(R.layout.fragment_second, container, false);
-        listaDatos=new ArrayList<>();
-        recyclerDatos=(RecyclerView) vista.findViewById(R.id.recyclerId);
-        recyclerDatos.setLayoutManager(new LinearLayoutManager(getContext()));
+        View root=inflater.inflate(R.layout.fragment_second, container, false);
+        antiguo= root.findViewById(R.id.antiguo);
+        moderno= root.findViewById(R.id.moderno);
 
-        llenarLista();
-        AdapterDatos adapter=new AdapterDatos(listaDatos, this);
-        recyclerDatos.setAdapter(adapter);
-        return vista;
+        antiguo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(getActivity(), SecondActivityA.class);
+                getActivity().startActivity(intent);
+            }
+        });
 
+        moderno.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(getActivity(), SecondActivityB.class);
+                getActivity().startActivity(intent);
+            }
+        });
+        return root;
     }
 
-    private void llenarLista() {
-        listaDatos.add(new DatosVo("Maravillas del mundo antiguo","egipto",R.drawable.ic_piramides));
-        listaDatos.add(new DatosVo("Maravillas del mundo moderno","asia",R.drawable.ic_taj));
-    }
 
 
-    @Override
-    public void lugarSelecionado(DatosVo datosVo) {
-        Intent intent=new Intent(getActivity(), SecondActivity.class);
-        intent.putExtra("id",datosVo.getTitulo());
-        startActivity(intent);
 
 
-    }
 }

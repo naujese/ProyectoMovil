@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="maravillas del mundo moderno"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView android:id="@+id/uno" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" app:cardCornerRadius="20dp" app:cardElevation="4dp" app:cardUseCompatPadding="true">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:orientation="vertical">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="6dp">
+                            <ImageView android:id="@+id/idFotoUno" android:layout_width="70dp" android:layout_height="70dp" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_gravity="center" android:paddingLeft="14dp" android:paddingRight="14dp" app:srcCompat="@drawable/pirami" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginStart="4dp" android:layout_marginTop="2dp" android:layout_toEndOf="@+id/idFotoUno" android:orientation="vertical" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/idFotoUno">
+                                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="Piramides de giza" android:textSize="24dp" android:textStyle="bold"/>
+                                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Egipto" android:textSize="18sp"/>
+                            </LinearLayout>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="6dp" android:layout_marginRight="6dp" android:text="➡" android:textSize="20dp" android:textStyle="bold" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView android:id="@+id/dos" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" app:cardCornerRadius="20dp" app:cardElevation="4dp" app:cardUseCompatPadding="true">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:orientation="vertical">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="6dp">
+                            <ImageView android:id="@+id/idFotoDos" android:layout_width="85dp" android:layout_height="85dp" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_gravity="center" android:paddingLeft="14dp" android:paddingRight="14dp" app:srcCompat="@drawable/templos" />
+                            <LinearLayout android:id="@+id/linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginStart="4dp" android:layout_marginTop="2dp" android:layout_toEndOf="@+id/idFotoDos" android:orientation="vertical" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/idFotoDos">
+                                <TextView android:id="@+id/idTitulo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="Templo de Artemisa" android:textSize="24dp" android:textStyle="bold"/>
+                                <TextView android:id="@+id/idInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Turquia" android:textSize="18sp"/>
+                            </LinearLayout>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="6dp" android:text="➡" android:textSize="20dp" android:textStyle="bold" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView android:id="@+id/tres" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" app:cardCornerRadius="20dp" app:cardElevation="4dp" app:cardUseCompatPadding="true">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:orientation="vertical">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="6dp">
+                            <ImageView android:id="@+id/idFotoTres" android:layout_width="80dp" android:layout_height="80dp" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_gravity="center" android:paddingLeft="14dp" android:paddingRight="14dp" app:srcCompat="@drawable/babilonia" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginStart="4dp" android:layout_marginTop="2dp" android:layout_toEndOf="@+id/idFotoTres" android:orientation="vertical" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/idFotoTres">
+                                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="Jardines Colgantes de Babilonia" android:textSize="24dp" android:textStyle="bold"/>
+                                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Irak" android:textSize="18sp"/>
+                            </LinearLayout>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="6dp" android:layout_marginRight="6dp" android:text="➡" android:textSize="20dp" android:textStyle="bold" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView android:id="@+id/cuatro" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" app:cardCornerRadius="20dp" app:cardElevation="4dp" app:cardUseCompatPadding="true">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:orientation="vertical">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="6dp">
+                            <ImageView android:id="@+id/idFotoCuatro" android:layout_width="85dp" android:layout_height="85dp" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_gravity="center" android:paddingLeft="14dp" android:paddingRight="14dp" app:srcCompat="@drawable/estatua" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginStart="4dp" android:layout_marginTop="2dp" android:layout_toEndOf="@+id/idFotoCuatro" android:orientation="vertical" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/idFotoCuatro">
+                                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="Estatua de Zeus" android:textSize="24dp" android:textStyle="bold"/>
+                                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Grecia" android:textSize="18sp"/>
+                            </LinearLayout>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="6dp" android:layout_marginRight="6dp" android:text="➡" android:textSize="20dp" android:textStyle="bold" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView android:id="@+id/cinco" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" app:cardCornerRadius="20dp" app:cardElevation="4dp" app:cardUseCompatPadding="true">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:orientation="vertical">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="6dp">
+                            <ImageView android:id="@+id/idFotoCinco" android:layout_width="100dp" android:layout_height="100dp" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_gravity="center" android:paddingLeft="14dp" android:paddingRight="14dp" app:srcCompat="@drawable/mausoleo" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginStart="4dp" android:layout_marginTop="2dp" android:layout_toEndOf="@+id/idFotoCinco" android:orientation="vertical" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/idFotoCinco">
+                                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="Mausoleo de Halicarnaso" android:textSize="24dp" android:textStyle="bold"/>
+                                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Turquía" android:textSize="18sp"/>
+                            </LinearLayout>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="6dp" android:layout_marginRight="6dp" android:text="➡" android:textSize="20dp" android:textStyle="bold" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView android:id="@+id/seis" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" app:cardCornerRadius="20dp" app:cardElevation="4dp" app:cardUseCompatPadding="true">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:orientation="vertical">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="6dp">
+                            <ImageView android:id="@+id/idFotoSeis" android:layout_width="85dp" android:layout_height="85dp" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_gravity="center" android:paddingLeft="14dp" android:paddingRight="14dp" app:srcCompat="@drawable/rodas" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginStart="4dp" android:layout_marginTop="2dp" android:layout_toEndOf="@+id/idFotoSeis" android:orientation="vertical" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/idFotoSeis">
+                                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="Coloso de Rodas" android:textSize="24dp" android:textStyle="bold"/>
+                                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Grecia" android:textSize="18sp"/>
+                            </LinearLayout>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="6dp" android:layout_marginRight="6dp" android:text="➡" android:textSize="20dp" android:textStyle="bold" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView android:id="@+id/ciete" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" app:cardCornerRadius="20dp" app:cardElevation="4dp" app:cardUseCompatPadding="true">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:orientation="vertical">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="6dp">
+                            <ImageView android:id="@+id/idFotoCiete" app:cardCornerRadius="20dp" android:layout_width="85dp" android:layout_height="85dp" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_gravity="center" android:paddingLeft="14dp" android:paddingRight="14dp" app:srcCompat="@drawable/alejandria" />
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginStart="4dp" android:layout_marginTop="2dp" android:layout_toEndOf="@+id/idFotoCiete" android:orientation="vertical" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/idFotoCiete">
+                                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="Faro de Alejandría" android:textSize="24dp" android:textStyle="bold"/>
+                                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Egipto" android:textSize="18sp"/>
+                            </LinearLayout>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="6dp" android:layout_marginRight="6dp" android:text="➡" android:textSize="20dp" android:textStyle="bold" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

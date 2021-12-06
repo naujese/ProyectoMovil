@@ -10,21 +10,49 @@
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/ic_chitzen.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/ic_explore.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/ic_faro.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/ic_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/ic_jardin.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/ic_logo_transparent.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/ic_mauso.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/ic_pira.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/ic_rodas.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/ic_screen_rotation.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/ic_taj.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/ic_templo.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/drawable/ic_zeus.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/font/abel.xml" value="0.21822916666666667" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_confirmation.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_forgot_password.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_fourth_ac.xml" value="0.1" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_home.xml" value="0.14" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_second.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_second_activity.xml" value="0.1" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_second_b.xml" value="0.1" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_second_iiactivity.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_sign_up.xml" value="0.18" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_third.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_third_aa.xml" value="0.1" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_third_ab.xml" value="0.1" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_third_ac.xml" value="0.1" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_third_activity.xml" value="0.1" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_third_ad.xml" value="0.1" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_third_ae.xml" value="0.1" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_third_af.xml" value="0.1" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_third_ag.xml" value="0.1" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_third_ba.xml" value="0.1" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_third_bb.xml" value="0.1" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_third_bc.xml" value="0.1" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_third_bd.xml" value="0.1" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_third_be.xml" value="0.1" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_third_bf.xml" value="0.1" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/activity_third_bg.xml" value="0.1" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/element.xml" value="0.22" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/fragment_first.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/fragment_second.xml" value="0.22" />
+        <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/fragment_second.xml" value="0.2" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/fragment_third.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/layout/list_element.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/crist/Documents/ProyectoMovil/app/src/main/res/menu/bottom_navigation.xml" value="0.25" />
