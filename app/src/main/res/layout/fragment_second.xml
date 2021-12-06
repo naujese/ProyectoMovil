@@ -75,11 +75,6 @@
                                     android:text="maravillas del mundo antiguo"
                                     android:textSize="24dp"
                                     android:textStyle="bold"/>
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Info"
-                                    android:textSize="18sp"/>
                             </LinearLayout>
                             <TextView
                                 android:layout_width="wrap_content"
@@ -143,12 +138,6 @@
                                     android:text="maravillas del mundo moderno"
                                     android:textSize="24dp"
                                     android:textStyle="bold"/>
-                                <TextView
-                                    android:id="@+id/idInfo"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Info"
-                                    android:textSize="18sp"/>
                             </LinearLayout>
                             <TextView
                                 android:layout_width="wrap_content"

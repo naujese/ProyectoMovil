@@ -10,6 +10,8 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 
+import java.util.List;
+
 public class FourthActivityAA extends AppCompatActivity implements SensorEventListener{
 
     private SensorManager sm;

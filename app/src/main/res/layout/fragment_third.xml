@@ -1,19 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ThirdFragment">
+    android:orientation="vertical"
+    tools:context=".HomeActivity"
+    android:padding="10dp"
+    android:layout_marginBottom="50dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/abel"
-        android:textColor="@color/teal_200"
-        android:textSize="40sp"
-        android:text="Tercer fragmento" />
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-</FrameLayout>
+            <TextView
+                android:id="@+id/saludo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abel"
+                android:text="HOLA"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:transitionName="textTrans"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="121dp" />
+
+            <TextView
+                android:id="@+id/continuarLabe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abel"
+                android:text="Somos Magnus Mundus "
+                android:textSize="24sp"
+                android:transitionName="iniciaSesionTextTrans"
+                tools:layout_editor_absoluteX="6dp"
+                tools:layout_editor_absoluteY="184dp" />
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginRight="163dp"
+        android:layout_marginBottom="16dp"
+        android:text="LOGOUT"/>
+</LinearLayout>
